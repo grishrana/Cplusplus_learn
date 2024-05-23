@@ -9,10 +9,11 @@
     1. Default Constructor: Initializes objects without arguments.
     2. Parameterized Constructor: Initializes objects with specific values.
     3. Copy Constructor: Initializes objects using another objects of the same class.
-    4. Move constructor: Transfers Resources from temporary objects, enhancing performance.
-    5. Defaulted/Deleted Constructor: Controls complier-generated constructors.
-    6. Delegating/Deleted Constructor: Uses other constructors to perform initialization.
-    7. Explicit constructors: Prevents implicit conversions and copy initialization.
+    4. Dynamic Constructor: Allocated memory for objects at runtime using new and delete.
+
+
+    This program is using constructor overloading. Constructor overloading refers to the use 
+    of multiple constructor in a class for various cases of initialization of objects.
 */
 
 //default constructor example:
@@ -46,6 +47,8 @@ class  book_info
     float price;
 
     public:
+    //we can have multiple constructors in the same class for different cases.
+    book_info(){}
     book_info(std::string , int, float);
     void display_info();
 
